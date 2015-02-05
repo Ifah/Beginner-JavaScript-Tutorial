@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript">
+			//object person - constructor function with properties
+			function person(name, age){
+				this.name = name; //properties name
+				this.age = age; //properties age
+				this.yearsUntilRetire = yearsLeft; //how to add methods
+			}
+
+			function yearsLeft(){
+				var numYears = 65 - this.age;
+				return numYears;
+			}
+
+			//creating a new instance of the object
+			var x = new person("Ifah", 24);
+		</script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			document.write(x.name + " " + x.age + "<br/>Years left to Retire " + x.yearsUntilRetire());
+		</script>
+	</body>
+</html>

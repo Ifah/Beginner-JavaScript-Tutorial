@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var movies = new Array("Avatar", "Hunters", "Fight Club");
+			var string1 = movies.join(" - "); //join converts an array to a string
+			document.write(string1);
+			movies.pop();//pop removes last element
+			var string2 = movies.join(", ");
+			document.write("<br/>" + string2);
+//output
+//Avatar - Hunters - Fight Club
+//Avatar, Hunters
+		</script>
+	</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<body>
+		<form name="loginForm">
+			Username:<input type="text" name="username" />
+			Password:<input type="password" name="password" />
+			<input type="submit" name="submit" value="Submit!" />
+		</form>
+
+		<script type="text/javascript">
+			//to access form element
+			var x = document.forms[0].elements[0].name;
+			document.write(x + "<br/>"); //output = username
+
+			var x = document.forms[0].elements[1].name;
+			document.write(x+ "<br/>"); //output = password
+
+			var x = document.forms[0].elements[2].name;
+			document.write(x+ "<br/>"); //output = submit
+
+			//another way to access form elements
+			var x = document.loginForm.elements[2].name;
+			document.write(x+ "<br/>"); //output = submit
+
+			//another way to access form elements
+			var x = document.loginForm.submit.name;
+			document.write(x+ "<br/>"); //output = submit
+		</script>
+	</body>
+</html>
